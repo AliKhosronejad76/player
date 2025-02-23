@@ -2,20 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+body{
+  /* min-height:max-content;
+  max-height:100vh; */
+  /* overflow-y: hidden; */
+  backdrop-filter: blur(19px);
+  -webkit-backdrop-filter: blur(19px);
+  
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.app{
+  backdrop-filter: blur(9px);
+  -webkit-backdrop-filter: blur(9px);
 }
+
+input[type='range']{ 
+  accent-color: rgb(229, 61, 241); 
+  
+}
+
+
+
+
+/******** Firefox ********/
+
